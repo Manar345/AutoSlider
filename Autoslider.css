@@ -127,6 +127,7 @@ body {
   }
   .title__headeing {
     line-height: 4.7rem;
+    letter-spacing: 0;
   }
   .title__subheading {
     line-height: 2.3rem;
