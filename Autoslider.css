@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 18px;
+  font-size: 19px;
 }
 body {
   margin: 0px;
@@ -42,12 +42,12 @@ body {
 .title__headeing {
   font-size: 4.5rem;
   font-weight: 900;
-  line-height: 3.5rem;
+  line-height: 3rem;
   letter-spacing: -0.24rem;
   margin-block: 1rem;
 }
 .title__subheading {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   margin-block: 1.3rem;
 }
 .title__paragraph {
@@ -124,6 +124,12 @@ body {
 @media (max-width: 768px) {
   html {
     font-size: 14px;
+  }
+  .title__headeing {
+    line-height: 4.7rem;
+  }
+  .title__subheading {
+    line-height: 2.3rem;
   }
   .Autoslider__slide {
     width: 300px;
