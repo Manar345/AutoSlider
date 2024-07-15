@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 18px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6rem;
+  color: #130b35;
+}
+@keyframes sliding {
+  from {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+}
+/* =========================================== */
+.title {
+  margin: 3rem 1rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.title p {
+  color: #343535;
+}
+.title__headeing {
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 3.5rem;
+  letter-spacing: -0.24rem;
+  margin-block: 1rem;
+}
+.title__subheading {
+  font-size: 1.7rem;
+  margin-block: 1.3rem;
+}
+.title__paragraph {
+  font-size: 1.1rem;
+}
+.title__button {
+  padding: 1rem 2.5rem;
+  margin-block: 1.5rem;
+  border: none;
+  background-color: #ffd900;
+  font-size: 1.15rem;
+  font-weight: bold;
+  border-radius: 100px;
+  cursor: pointer;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.title__button:hover,
+.title__button:focus {
+  background-color: #130b35;
+  color: white;
+}
+.title__subparagraph {
+  font-size: 0.9rem;
+}
+/* ============================================= */
+.Autoslider {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 1.5rem;
+  margin: 2rem 0;
+  width: 100%;
+}
+.Autoslider__track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 1.5rem;
+  -webkit-column-gap: 1.5rem;
+  -moz-column-gap: 1.5rem;
+  -ms-column-gap: 1.5rem;
+  -o-column-gap: 1.5rem;
+  animation: sliding 20s linear infinite;
+  -webkit-animation: sliding 20s linear infinite;
+  will-change: transform;
+}
+
+.Autoslider__slide {
+  width: 400px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.Autoslider__slide > * {
+  width: 100%;
+  object-fit: cover;
+}
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .Autoslider__slide {
+    width: 300px;
+    height: 200px;
+  }
+}
+@media (max-width: 425px) {
+  .Autoslider__slide {
+    width: 250px;
+    height: 150px;
+  }
+}
