@@ -48,14 +48,14 @@ body {
 }
 .title__subheading {
   font-size: 1.6rem;
-  margin-block: 1.3rem;
+  margin-block: 1.1rem;
 }
 .title__paragraph {
   font-size: 1.1rem;
 }
 .title__button {
-  padding: 1rem 2.5rem;
-  margin-block: 1.5rem;
+  padding: 1rem 3rem;
+  margin-block: 1.3rem;
   border: none;
   background-color: #ffd900;
   font-size: 1.15rem;
@@ -131,6 +131,9 @@ body {
   }
   .title__subheading {
     line-height: 2.3rem;
+  }
+  .title__button {
+    margin-block: 0.7rem;
   }
   .Autoslider__slide {
     width: 300px;
