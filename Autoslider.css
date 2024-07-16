@@ -30,6 +30,9 @@ body {
   }
 }
 /* =========================================== */
+.container {
+  width: 100%;
+}
 .title {
   margin: 3rem 1rem;
   display: grid;
@@ -42,7 +45,6 @@ body {
 .title__headeing {
   font-size: 4.5rem;
   font-weight: 900;
-  line-height: 3rem;
   letter-spacing: -0.24rem;
   margin-block: 1rem;
 }
@@ -86,7 +88,7 @@ body {
   white-space: nowrap;
   display: flex;
   flex-wrap: nowrap;
-  column-gap: 1.5rem;
+  column-gap: 2rem;
   margin: 1rem 0;
   width: 100%;
 }
@@ -96,19 +98,16 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  column-gap: 1.5rem;
-  -webkit-column-gap: 1.5rem;
-  -moz-column-gap: 1.5rem;
-  -ms-column-gap: 1.5rem;
-  -o-column-gap: 1.5rem;
-  animation: sliding 20s linear infinite;
-  -webkit-animation: sliding 20s linear infinite;
+  column-gap: 2rem;
+  -webkit-column-gap: 2rem;
+  -moz-column-gap: 2rem;
+  -ms-column-gap: 2rem;
+  -o-column-gap: 2rem;
+  animation: sliding 22s linear infinite;
+  -webkit-animation: sliding 22s linear infinite;
   will-change: transform;
 }
-
 .Autoslider__slide {
-  width: 425px;
-  height: 250px;
   overflow: hidden;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -116,14 +115,13 @@ body {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-
 .Autoslider__slide > * {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 /* ===== MEDIA QUERIES ===== */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   html {
     font-size: 14px;
   }
@@ -142,9 +140,33 @@ body {
     height: 200px;
   }
 }
-@media (max-width: 425px) {
+@media (min-width: 768px) {
+  .title__headeing {
+    line-height: 4rem;
+  }
   .Autoslider__slide {
-    width: 250px;
-    height: 150px;
+    width: 20rem;
+    height: 12rem;
+  }
+}
+@media (min-width: 1024px) {
+  .title__headeing {
+    line-height: 3rem;
+  }
+  .Autoslider__slide {
+    width: 30rem;
+    height: 15rem;
+  }
+}
+@media (min-width: 1280px) {
+  .Autoslider__slide {
+    width: 21rem;
+    height: 11rem;
+  }
+}
+@media (min-width: 1536px) {
+  .Autoslider__slide {
+    width: 33rem;
+    height: 18rem;
   }
 }
