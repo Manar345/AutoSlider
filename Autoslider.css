@@ -136,8 +136,8 @@ body {
     margin-block: 0.7rem;
   }
   .Autoslider__slide {
-    width: 300px;
-    height: 200px;
+    width: 15rem;
+    height: 9rem;
   }
 }
 @media (min-width: 768px) {
